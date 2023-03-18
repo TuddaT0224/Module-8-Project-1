@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+header,
+footer {
+    width: 100%;
+    height: 120px;
+    background-color: #0339f8;
+    color: #fcf712;
+}
+
+h1, h2 {
+    text-align: center;
+}
