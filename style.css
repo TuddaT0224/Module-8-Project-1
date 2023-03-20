@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Tilt Prism', cursive;
+    color: #FFA903;
+    background-color: #0e3fa9;
+    width: 100%;
+    height: 100px;
+}
