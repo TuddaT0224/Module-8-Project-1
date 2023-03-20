@@ -14,6 +14,59 @@
     <header id="top">
         <h1> BookBuster</h1>
     </header>
-    
+    <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-3" id="citySearch">
+            <div class="card" id="locationOptions">
+              <div class="card-header">
+                <div class="form-group" method="POST" id="form-group" data-list="list">
+                  <label for="inputdefault">Search for a genre or title: </label>
+                  <form class="example">
+                    <input type="text" placeholder="Type city name" id="cityNameSearch">
+                    <button id="searchBtn" type="submit"><i class="fa fa-search"></i></button>
+                  </form>
+                </div>
+                <ul id="searchHistoryList" style="display:table-column"></ul>
+                <div class="span2">
+                  <h5 class="popularSearches">Popular Searches</h5>
+                  <p><button class="btn btn-primary btn-block newCityBtn" id="action">Action</button></p>
+                  <p><button class="btn btn-primary btn-block newCityBtn" id="comedy">Comedy</button></p>
+                  <p><button class="btn btn-primary btn-block newCityBtn" id="mystery">Mystery</button></p>
+                  <p><button class="btn btn-primary btn-block newCityBtn" id="suspense">Suspense</button></p>
+                  <p><button class="btn btn-primary btn-block newCityBtn" id="romance">Romance</button></p>
+                  <p><button class="btn btn-primary btn-block newCityBtn" id="non-fiction">Non-fiction</button></p>
+                  <p><button class="btn btn-primary btn-block newCityBtn" id="biography">Biography</button></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-3" id="citySearch">
+                <div class="card" id="locationOptions">
+                  <div class="card-header">
+                    <div class="form-group" method="POST" id="form-group" data-list="list">
+                      <label for="inputdefault">Search for a genre or title: </label>
+                      <form class="example">
+                        <input type="text" placeholder="Type city name" id="cityNameSearch">
+                        <button id="searchBtn" type="submit"><i class="fa fa-search"></i></button>
+                      </form>
+                    </div>
+                    <ul id="searchHistoryList" style="display:table-column"></ul>
+                    <div class="span2">
+                      <h5 class="popularSearches">Popular Searches</h5>
+                      <p><button class="btn btn-primary btn-block newCityBtn" id="comedies">Comedies</button></p>
+                      <p><button class="btn btn-primary btn-block newCityBtn" id="action-movies">Action</button></p>
+                      <p><button class="btn btn-primary btn-block newCityBtn" id="thrillers">Thrillers</button></p>
+                      <p><button class="btn btn-primary btn-block newCityBtn" id="horror">Horror</button></p>
+                      <p><button class="btn btn-primary btn-block newCityBtn" id="romantic-comedies">Romantic Comedy</button></p>
+                      <p><button class="btn btn-primary btn-block newCityBtn" id="documentary">Documentary</button></p>
+                      <p><button class="btn btn-primary btn-block newCityBtn" id="adventure">Adventure</button></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
 </body>
 </html>
