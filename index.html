@@ -16,15 +16,15 @@
     <header id="top">
         <h1>BookBuster</h1>
     </header>
-    <div class="container-fluid">
+    <div class= "booksandmovies">
         <div class="row">
-          <div class="col-md-3" id="bookSearch">
+          <div class="books" id="bookSearch">
             <div class="card" id="bookOptions">
               <div class="card-header">
                 <div class="form-group" method="POST" id="form-group" data-list="list">
                   <label for="inputdefault">Search for a Book: </label>
                   <form class="example">
-                    <input type="text" placeholder="Type genre or book name" id="bookNameSearch">
+                    <input type="text" class = "search" placeholder="Type genre or book name" id="bookNameSearch">
                     <button id="searchBtn" type="submit"><i class="fa fa-search"></i></button>
                   </form>
                 </div>
@@ -45,13 +45,13 @@
 
           <div class="container-fluid">
             <div class="row">
-              <div class="col-md-3" id="movieSearch">
+              <div class="movies" id="movieSearch">
                 <div class="card" id="movieOptions">
                   <div class="card-header">
                     <div class="form-group" method="POST" id="form-group" data-list="list">
                       <label for="inputdefault">Search for a Movie: </label>
                       <form class="example">
-                        <input type="text" placeholder="Type genre or movie title" id="movieNameSearch">
+                        <input type="text" class = "search" placeholder="Type genre or movie title" id="movieNameSearch">
                         <button id="searchBtn" type="submit"><i class="fa fa-search"></i></button>
                       </form>
                     </div>
@@ -69,6 +69,10 @@
                   </div>
                 </div>
               </div>
-
+            </div>
+          </div>
+        </div>
+    </div>
 </body>
+
 </html>
