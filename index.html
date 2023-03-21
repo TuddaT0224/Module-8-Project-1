@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./style.css" />
     <title>BookBuster</title>
 </head>
@@ -12,17 +14,17 @@
 
 <body>
     <header id="top">
-        <h1> BookBuster</h1>
+        <h1>BookBuster</h1>
     </header>
     <div class="container-fluid">
         <div class="row">
-          <div class="col-md-3" id="citySearch">
-            <div class="card" id="locationOptions">
+          <div class="col-md-3" id="bookSearch">
+            <div class="card" id="bookOptions">
               <div class="card-header">
                 <div class="form-group" method="POST" id="form-group" data-list="list">
-                  <label for="inputdefault">Search for a genre or title: </label>
+                  <label for="inputdefault">Search for a Book: </label>
                   <form class="example">
-                    <input type="text" placeholder="Type city name" id="cityNameSearch">
+                    <input type="text" placeholder="Type genre or book name" id="bookNameSearch">
                     <button id="searchBtn" type="submit"><i class="fa fa-search"></i></button>
                   </form>
                 </div>
@@ -43,13 +45,13 @@
 
           <div class="container-fluid">
             <div class="row">
-              <div class="col-md-3" id="citySearch">
-                <div class="card" id="locationOptions">
+              <div class="col-md-3" id="movieSearch">
+                <div class="card" id="movieOptions">
                   <div class="card-header">
                     <div class="form-group" method="POST" id="form-group" data-list="list">
-                      <label for="inputdefault">Search for a genre or title: </label>
+                      <label for="inputdefault">Search for a Movie: </label>
                       <form class="example">
-                        <input type="text" placeholder="Type city name" id="cityNameSearch">
+                        <input type="text" placeholder="Type genre or movie title" id="movieNameSearch">
                         <button id="searchBtn" type="submit"><i class="fa fa-search"></i></button>
                       </form>
                     </div>
