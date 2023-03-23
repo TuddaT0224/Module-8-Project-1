@@ -11,8 +11,6 @@
     <link rel="stylesheet" href="./style.css" />
     <title>BookBuster</title>
 </head>
-
-
 <body>
     <header id="top">
         <h1>BookBuster</h1>
@@ -23,26 +21,28 @@
             <div class="card" id="bookOptions">
               <div class="card-header">
                 <div class="form-group" method="POST" id="form-group" data-list="list">
-                  <label for="inputdefault">Search for a Book: </label>
-                  <form class="example">
-                    <input type="text" class = "search" placeholder="Type genre or book name" id="bookNameSearch">
-                    <button id="searchBtn" type="submit"><i class="fa fa-search"></i></button>
+                  <form id="book-search">
+                    <label for="inputdefault">Search for a Book: </label>
+                    <input type="text" id="search-term" class="search" placeholder="Type genre or book name">
+                    <button type="submit"><i class="fa fa-search"></i></button>
                   </form>
                 </div>
                 <ul id="searchHistoryList" style="display:table-column"></ul>
                 <div class="span2">
                   <h5 class="popularSearches">Popular Searches</h5>
-                  <p><button class="btn btn-primary btn-block newCityBtn" id="action">Action</button></p>
-                  <p><button class="btn btn-primary btn-block newCityBtn" id="comedy">Comedy</button></p>
-                  <p><button class="btn btn-primary btn-block newCityBtn" id="mystery">Mystery</button></p>
+                  <button class="button" id="romance-btn">Romance</button>
+                  <p><button class="button" id="mystery-btn">Mystery</button></p>
+                  <button class="button" id="fantasy-btn">Fantasy</button>
                   <p><button class="btn btn-primary btn-block newCityBtn" id="suspense">Suspense</button></p>
                   <p><button class="btn btn-primary btn-block newCityBtn" id="romance">Romance</button></p>
                   <p><button class="btn btn-primary btn-block newCityBtn" id="non-fiction">Non-fiction</button></p>
                   <p><button class="btn btn-primary btn-block newCityBtn" id="biography">Biography</button></p>
+                  <ul id="search-results"></ul>
                 </div>
               </div>
             </div>
           </div>
+<<<<<<< HEAD
           <div class="tile is-parent">
             <article class="tile is-child notification is-info">
               <p class="title">Middle tile</p>
@@ -52,6 +52,8 @@
               </figure>
             </article>
           </div>
+=======
+>>>>>>> e8ffe2de4db0541d99b934671bc1e2b540b2119d
           <div class="container-fluid">
             <div class="row">
               <div class="movies" id="movieSearch">
@@ -82,9 +84,21 @@
           </div>
         </div>
     </div>
+<<<<<<< HEAD
 <!--This script may have issues check it if we can't fetch the imdb library-->
 <script src="https://rapidapi.com/rapihub-rapihub-default/api/imdb-top-100-movies/"></script>
 <script src="./script.js"></script>    
+=======
+    <script defer src="./script.js"></script>
+>>>>>>> e8ffe2de4db0541d99b934671bc1e2b540b2119d
 </body>
-
 </html>
+
+
+
+
+
+
+
+
+
