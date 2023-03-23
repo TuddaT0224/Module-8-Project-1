@@ -17,7 +17,7 @@ h1 {
 
 .books {
     border: 5px outset;
-    position: fixed;
+    position: relative;
     left: -3%;
     font-weight: bold;
     margin: 5%;
@@ -26,7 +26,8 @@ h1 {
 
 .movies {
     border: 5px outset;
-    position: fixed;
+    position: relative;
+    flex-wrap: wrap;
     left: -3%;
     bottom: 7%;
     font-weight: bold;
@@ -36,4 +37,8 @@ h1 {
 
 .search {
     border: 3px solid #0e3fa9;
+}
+
+.cardbody {
+    border: 300px solid black;
 }
