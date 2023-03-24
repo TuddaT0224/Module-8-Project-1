@@ -27,16 +27,14 @@
                   </form>
                 </div>
                 <ul id="searchHistoryList" style="display:table-column"></ul>
-                <div class="span2">
-                  <h5 class="popularSearches">Popular Searches</h5>
-                  <button class="button" id="romance-btn">Romance</button>
-                  <p><button class="button" id="mystery-btn">Mystery</button></p>
-                  <button class="button" id="fantasy-btn">Fantasy</button>
-                  <p><button class="btn btn-primary btn-block newCityBtn" id="suspense">Suspense</button></p>
-                  <p><button class="btn btn-primary btn-block newCityBtn" id="romance">Romance</button></p>
-                  <p><button class="btn btn-primary btn-block newCityBtn" id="non-fiction">Non-fiction</button></p>
-                  <p><button class="btn btn-primary btn-block newCityBtn" id="biography">Biography</button></p>
-                  <ul id="search-results"></ul>
+                <div id="category-buttons">
+                  <p><button class="category-button" data-category="fiction">Fiction</button></p>
+                  <p><button class="category-button" data-category="history">History</button></p>
+                  <p><button class="category-button" data-category="biography">Biography</button></p>
+                  <p><button class="category-button" data-category="mystery">Mystery</button></p>
+                  <p><button class="category-button" data-category="romance">Romance</button></p>
+                  <p><button class="category-button" data-category="science-fiction">Science Fiction</button></p>
+                  <ul id="search-results" class="book-results"></ul>
                 </div>
               </div>
             </div>
@@ -74,6 +72,15 @@
     <script defer src="./script.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
 
 
 
