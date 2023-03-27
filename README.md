@@ -23,3 +23,10 @@ SO THAT I can enjoy my free time
 ## GitHub REPO 
 
 https://github.com/TuddaT0224/Module-8-Project-1/edit/main/README.md
+
+
+#### Application screenshots
+
+![image](https://user-images.githubusercontent.com/121210332/228090953-2bf8d96e-3e23-43ed-9b53-ad37cf00febf.png)
+
+![image](https://user-images.githubusercontent.com/121210332/228090983-8b8ad5fd-c3ae-45d0-a980-fa4f3c03f4ca.png)
