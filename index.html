@@ -1,92 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./style.css" />
-    <title>BookBuster</title>
-</head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./style.css" />
+  <title>BookBuster</title>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
 <body>
-    <header id="top">
-        <h1>BookBuster</h1>
-    </header>
-    <div class= "booksandmovies">
-        <div class="row">
-          <div class="books" id="bookSearch">
-            <div class="card" id="bookOptions">
-              <div class="card-header">
-                <div class="form-group" method="POST" id="form-group" data-list="list">
-                  <form id="book-search">
-                    <label for="inputdefault">Search for a Book: </label>
-                    <input type="text" id="search-term" class="search" placeholder="Type genre or book name">
-                    <button type="submit"><i class="fa fa-search"></i></button>
-                  </form>
-                </div>
-                <ul id="searchHistoryList" style="display:table-column"></ul>
-                <div id="category-buttons">
-                  <p><button class="category-button" data-category="fiction">Fiction</button></p>
-                  <p><button class="category-button" data-category="history">History</button></p>
-                  <p><button class="category-button" data-category="biography">Biography</button></p>
-                  <p><button class="category-button" data-category="mystery">Mystery</button></p>
-                  <p><button class="category-button" data-category="romance">Romance</button></p>
-                  <p><button class="category-button" data-category="science-fiction">Science Fiction</button></p>
-                  <ul id="search-results" class="book-results"></ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="container-fluid">
-            <div class="row">
-              <div class="movies" id="movieSearch">
-                <div class="card" id="movieOptions">
-                  <div class="card-header">
-                    <div class="form-group" method="POST" id="form-group" data-list="list">
-                      <label for="inputdefault">Search for a Movie: </label>
-                      <form class="example">
-                        <input type="text" class = "search" placeholder="Type genre or movie title" id="movieNameSearch">
-                        <button id="searchBtn" type="submit"><i class="fa fa-search"></i></button>
-                      </form>
-                    </div>
-                    <ul id="searchHistoryList" style="display:table-column"></ul>
-                    <div class="span2">
-                      <h5 class="popularSearches">Popular Searches</h5>
-                      <p><button class="btn btn-primary btn-block newCityBtn" id="comedies">Comedies</button></p>
-                      <p><button class="btn btn-primary btn-block newCityBtn" id="action-movies">Action</button></p>
-                      <p><button class="btn btn-primary btn-block newCityBtn" id="thrillers">Thrillers</button></p>
-                      <p><button class="btn btn-primary btn-block newCityBtn" id="horror">Horror</button></p>
-                      <p><button class="btn btn-primary btn-block newCityBtn" id="romantic-comedies">Romantic Comedy</button></p>
-                      <p><button class="btn btn-primary btn-block newCityBtn" id="documentary">Documentary</button></p>
-                      <p><button class="btn btn-primary btn-block newCityBtn" id="adventure">Adventure</button></p>
-                    </div>
-                  </div>
-                </div>
+  </head>
+  <header id="top">
+    <h1>BookBuster</h1>
+  </header>
+  <div class="booksandmovies">
+    <div class="row">
+      <div class="col-6">
+        <div class="movies" id="movieSearch">
+          <div class="card" id="movieOptions">
+            <div class="card-header">
+              <div class="form-group" method="POST" id="form-group" data-list="list">
+                <form id="movie-search">
+                  <label for="inputdefault">See Current Top 100 Movies:</label>
+                  <!-- <input type="text" class="search" placeholder="Type genre or movie title" id="movieNameSearch"> -->
+                  <button id="searchBtn" type="submit"><i class="fa fa-search"></i></button>
+                </form>
               </div>
             </div>
           </div>
         </div>
+      </div>
+      <div class="col-6">
+        <div class="books" id="bookSearch">
+          <div class="card" id="bookOptions">
+            <div class="card-header">
+              <div class="form-group" method="POST" id="form-group" data-list="list">
+                <form id="book-search">
+                  <label for="inputdefault">Search for a Book: </label>
+                  <input type="text" id="search-term" class="search" placeholder="Type genre or book name">
+                  <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+              </div>
+              <ul id="searchHistoryList" style="display:table-column"></ul>
+              <div id="category-buttons">
+                <p><button class="category-button" data-category="fiction">Fiction</button></p>
+                <p><button class="category-button" data-category="history">History</button></p>
+                <p><button class="category-button" data-category="biography">Biography</button></p>
+                <p><button class="category-button" data-category="mystery">Mystery</button></p>
+                <p><button class="category-button" data-category="romance">Romance</button></p>
+                <p><button class="category-button" data-category="science-fiction">Science Fiction</button></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <script defer src="./script.js"></script>
+  </div>
+  <div class="container-fluid">
+    <div class="movies" id="movie-results"></div>
+  </div>
+  <script defer src="./script.js"></script>
 </body>
+
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
