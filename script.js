@@ -1,10 +1,18 @@
 const form = document.getElementById('book-search');
 const searchTermInput = document.getElementById('search-term');
 const searchResultsList = document.getElementById('search-results');
-
+const categoryButtons = document.querySelectorAll('.category-button');
 form.addEventListener('submit', (event) => {
   event.preventDefault();
-  const searchTerm = searchTermInput.value;
+  searchBooks(searchTermInput.value);
+});
+categoryButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    const category = button.getAttribute('data-category');
+    searchBooks(category);
+  });
+});
+function searchBooks(searchTerm) {
   const apiUrl = `https://openlibrary.org/search.json?q=${searchTerm}`;
   fetch(apiUrl)
     .then(response => response.json())
@@ -73,3 +81,5 @@ fetch('https://imdb-top-100-movies.p.rapidapi.com/', {
 
 
 
+
+}
