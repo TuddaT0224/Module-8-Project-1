@@ -1,6 +1,6 @@
 # BookBuster
 
-https://tuddat0224.github.io/Module-8-Project-1/
+https://tuddat0224.github.io/BookBuster/
 
 ## User Story
 
